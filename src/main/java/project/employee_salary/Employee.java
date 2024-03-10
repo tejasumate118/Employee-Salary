@@ -45,12 +45,11 @@ public class Employee {
     public void setSalary(float salary) {
         this.salary = salary;
     }
-    public void printData(){
-        System.out.println("-----------------------------------------");
-        System.out.println("Name      : "+getName());
-        System.out.println("Id        : "+getId());
-        System.out.println("Experience: "+getExperience());
-        System.out.println("Salary    : "+getSalary()+" LPA");
+    public void printData() {
+        System.out.println("+-------+------------------+------------+------------+");
+        System.out.printf("| %-5s | %-16s | %-10s | %-10s |\n", getId(), getName(), String.format(getExperience()+" Years"), String.format(getSalary()+" LPA"));
+
     }
+
 }
 

@@ -7,6 +7,6 @@ public class CalculateSalary {
         return 3*experience;
     }
     public String salaryToLPA(float salary){
-        return salary+"LPA";
+        return String.format("%.2f LPA",salary);
     }
 }

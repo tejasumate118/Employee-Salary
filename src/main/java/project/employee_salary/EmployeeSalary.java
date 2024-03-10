@@ -6,8 +6,8 @@ public class EmployeeSalary {
     private static final CalculateSalary calculateSalary=new CalculateSalary();
     private static final Scanner sc=new Scanner(System.in);
     public static void main(String[] args) {
-         testSingleSalary();
-         testMultipleSalary();
+         //testSingleSalary();
+        //testMultipleSalary();
          testMultipleObject();
     }
 
@@ -28,9 +28,14 @@ public class EmployeeSalary {
             employee.setSalary(calculateSalary.calSalary(employee.getExperience()));
         }
         //print data
+        System.out.println("+-------+------------------+------------+------------+");
+        System.out.println("| ID    | Name             | Experience | Salary     |");
+
+
         for(Employee employee:employees){
             employee.printData();
         }
+        System.out.println("+-------+------------------+------------+------------+");
 
     }
 
