@@ -1,14 +1,19 @@
 package main.java.project.employee_salary;
 
+import main.java.project.employee_salary.file_io.*;
+
+
 import java.util.*;
 
 public class EmployeeSalary {
     private static final CalculateSalary calculateSalary=new CalculateSalary();
     private static final Scanner sc=new Scanner(System.in);
+    private static final FileIO fileIO=new FileIO();
     public static void main(String[] args) {
          //testSingleSalary();
         //testMultipleSalary();
-         testMultipleObject();
+         //testMultipleObject();
+         fileIO.testCSVInput();
     }
 
     private static void testMultipleObject() {
